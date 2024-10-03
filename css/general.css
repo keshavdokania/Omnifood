@@ -138,6 +138,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   cursor: pointer;
@@ -149,6 +150,9 @@ body {
   font-weight: 600;
   /* Puts transition on original state */
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -188,6 +192,22 @@ body {
   border-bottom: 1px solid transparent;
 }
 
+.btn--form{
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover{
+  background-color: #fff;
+  color: #555;
+}
+
+*:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(243, 143, 55, 0.514);
+}
 /* HELPER/SETTING CLASSES */
 
 .margin-right-sm {
@@ -202,3 +222,5 @@ body {
 strong{
   font-weight: 500;
 }
+
+
