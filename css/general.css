@@ -83,6 +83,8 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+
+  
 }
 
 .grid--2-cols {
@@ -94,6 +96,10 @@ body {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid:not(:last-child){
+  margin-bottom: 9.6rem;
 }
 
 .grid--center-v{
